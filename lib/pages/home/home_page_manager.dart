@@ -27,8 +27,8 @@ class HomePageManager {
     buttonNotifier.value = (isCelsius) ? '°C' : '°F';
     try {
       final weather = await _webApi.getWeather(
-        longitude: 106.9057,
-        latitude: 47.8864,
+        longitude: -3.550218,
+        latitude: -38.870788,
       );
       _temperature = weather.temperature;
       final temperature = (isCelsius) ? _temperature : _convertToFahrenheit(_temperature);
